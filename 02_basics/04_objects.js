@@ -68,14 +68,21 @@ const {courseInstructor: instructor} = course
 // console.log(courseInstructor);
 console.log(instructor);
 
+// const navbar = ({company}) =>{          // here company written in curly braces used for destructuring of object
+
+// }
+// navbar (company = "hitesh")
+
+
 // {
-//     "name": "hitesh",
-//     "coursename": "js in hindi",
+//     "name": "hitesh",                       // this is Json structure
+//     "coursename": "js in hindi",            // here keys and objects treated as a string
 //     "price": "free"
 // }
 
 [
-    {},
-    {},
+    {},                 // this is also a Json structure
+    {},                // these are objects in array
     {}
 ]
+ // Json is a JavaScript object notation
