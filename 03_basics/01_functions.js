@@ -36,8 +36,8 @@ function loginUserMessage(username = "sam"){
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
+// console.log(loginUserMessage("sohag"))
+// console.log(loginUserMessage("sohag"))
 
 
 function calculateCartPrice(val1, val2, ...num1){                     
@@ -47,7 +47,7 @@ function calculateCartPrice(val1, val2, ...num1){
 // console.log(calculateCartPrice(200, 400, 500, 2000))
 
 const user = {
-    username: "hitesh",
+    username: "sohag",
     prices: 199
 }
 
