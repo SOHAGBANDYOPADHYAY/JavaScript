@@ -1,0 +1,72 @@
+JavaScript execution context means how JavaScript runs or execute codes. JavaScript is a single threaded progamming language.
+
+=> global execution context : Whenever we try to run codes first global EC occurs and it keeps inside "this" variable
+
+=> functional execution context : 
+
+=> eval execution context : 
+
+JavaScript codes run in two phases.
+1. Memory creation phase or creation phase : here, when we declares variables inside our codes, in this
+    phase it just allocates memories for them.
+
+2. execution phase : functional operation or execution happens here.
+
+example:
+let val1 = 10                                   
+let val2 = 5                                    
+function addNum(num1, num2){  
+    let total = num1 + num2
+    return total
+}
+let result1 = addNum(val1, val2)
+let result2 = addNum(10,2)
+
+Step 1 : global execution or environment: it keeps inside "this" variable
+Step 2 : Memory creation phase : allocates Memory for variables
+     for this example: val1=> undefined
+      val2=> undefined
+      addNum=> definition. i.e (num1, num2){  let total = num1 + num2
+                                              return total}
+       result1=> undefined
+       result2=> undefined 
+this whole process(step 1 & step 2) is called first cycle and it happens every time.       
+    
+
+
+execution phase:
+ val1<= 10
+ val2<= 5
+ addNum will create another new execution context i.e new variable environment + execution thread. Here it will again
+ creates "creation phase" & "execution phase" for every time when we declare function.
+ for this example "addNum" which writes on line number 22
+ here in memory phase             & execution context
+        val1=> undefined            num1=> 10
+        val2=> undefined            num2=> 5
+        total=> undefined           total=> 15
+        
+ After that it returns (the total value which is 15) to global execution context. After that new execution context gets deleted.
+ Then the value of result1 will be 15.
+
+ The process will be same for addNum for result2.
+
+
+
+ ****************************CALL STACK***************************
+ function one() {
+    console.log("one")
+    two()
+}
+function two() {
+    console.log("two")
+    three()
+}
+function three() {
+    console.log("three")
+}
+
+one()
+two()
+three()
+
+It works in LIFO method i.g Last In first Out
