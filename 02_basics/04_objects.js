@@ -11,8 +11,8 @@ const regularUser = {
     email: "some@gmail.com",
     fullname: {
         userfullname: {
-            firstname: "hitesh",
-            lastname: "choudhary"
+            firstname: "sohag",
+            lastname: "banerjee"
         }
     }
 }
@@ -58,7 +58,7 @@ users[1].email
 const course = {
     coursename: "js in hindi",
     price: "999",
-    courseInstructor: "hitesh"
+    courseInstructor: "sohag"
 }
 
 // course.courseInstructor
@@ -71,11 +71,11 @@ console.log(instructor);
 // const navbar = ({company}) =>{          // here company written in curly braces used for destructuring of object
 
 // }
-// navbar (company = "hitesh")
+// navbar (company = "sohag")
 
 
 // {
-//     "name": "hitesh",                       // this is Json structure
+//     "name": "sohag",                       // this is Json structure
 //     "coursename": "js in hindi",            // here keys and objects treated as a string
 //     "price": "free"
 // }
