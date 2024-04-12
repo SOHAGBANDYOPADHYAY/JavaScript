@@ -8,7 +8,7 @@
 // If we don't use ";" it will throw an error for the next one.
 ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`);
-} )('hitesh')
+} )('sohag')
 
 // (Here we write function) (this is for execution)
 // To remove global scope pollution we use IIFE
