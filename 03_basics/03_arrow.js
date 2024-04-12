@@ -1,5 +1,5 @@
 const user = {
-    username: "hitesh",
+    username: "sohag",
     price: 999,
 
     welcomeMessage: function() {
@@ -16,19 +16,19 @@ const user = {
 // console.log(this);  HERE IT WILL GIVE EMPTY OBJECT "{}" BUT IN CONSOLE IT WILL GIVE WINDOW.
 
 // function chai(){
-//     let username = "hitesh"
+//     let username = "sohag"
 //     console.log(this.username);
 // }
 
 // chai()
 
 // const chai = function () {
-//     let username = "hitesh"
+//     let username = "sohag"
 //     console.log(this.username); WE CAN NOT USE "this" FUNCTION. bECAUSE IT WORKS INSIDE AN OBJECT BUT NOT INSIDE A FUNCTION
 // }
 
 const chai =  () => {
-    let username = "hitesh"
+    let username = "sohag"
     console.log(this);
 }
 
@@ -43,7 +43,7 @@ const chai =  () => {
 
 // const addTwo = (num1, num2) => ( num1 + num2 )     no need to write return keyword here.
 
-const addTwo = (num1, num2) => ({username: "hitesh"})
+const addTwo = (num1, num2) => ({username: "sohag"})
 // This the process of returning Object. means we should wrap the curley braces by parenthesis
 
 console.log(addTwo(3, 4))
