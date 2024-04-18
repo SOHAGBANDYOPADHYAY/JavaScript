@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color: #212121;">
+<body style="background-color: #212121; color: aliceblue;">
     0	UNSENT	Client has been created. open() not called yet.
 1	OPENED	open() has been called.
 2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
@@ -19,7 +19,7 @@
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
-            const data = JSON.parse(this.responseText)
+            const data = JSON.parse(this.responseText)  //parse converts string into Json
             console.log(typeof data);
             console.log(data.followers);
         }
@@ -27,3 +27,5 @@
     xhr.send();
 </script>
 </html>
+
+// Most of the time we receive the responses from the url as string 
