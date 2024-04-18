@@ -9,14 +9,26 @@
     <h1>Chai aur Javascript</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
+
+    <script>
+        let intervalId;
+
+        // Function to print the current date and time
+        const sayDate = function() {
+            console.log("hi", Date.now());
+        }
+
+        // Event listener for the Start button
+        document.getElementById("start").addEventListener("click", function() {
+            // Start printing every second
+            intervalId = setInterval(sayDate, 1000);
+        });
+
+        // Event listener for the Stop button
+        document.getElementById("stop").addEventListener("click", function() {
+            // Stop printing
+            clearInterval(intervalId);
+        });
+    </script>
 </body>
-<script>
-    const sayDate = function(str){
-        console.log(str, Date.now());
-    }
-
-    const intervalId = setInterval(sayDate, 1000, "hi")
-
-    clearInterval(intervalId)
-</script>
 </html>
