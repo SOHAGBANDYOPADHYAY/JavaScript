@@ -99,3 +99,5 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 .catch((error) => console.log(error))
 
 // promise.all
+// promise is an object
+// async await can not able to handle error directly
