@@ -7,7 +7,7 @@ class User {
         console.log(`Username: ${this.username}`);
     }
 
-    static createId(){
+    static createId(){                 //static method aur property ko access hone se rok deta hai 
         return `123`
     }
 }
